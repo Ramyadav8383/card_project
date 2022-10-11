@@ -15,7 +15,7 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background: var(--grey-light);
 }
-h3 {
+span {
   color: var(--primary);
   letter-spacing: 3px;
   text-transform: uppercase;
@@ -23,29 +23,35 @@ h3 {
   font-size: 1rem;
   margin: 0.5rem 0;
 }
-.blog > h2 {
+/* section blogs */
+.blogs {
+  padding: 6rem 0;
+}
+/* section title */
+.section-title {
   text-align: center;
   letter-spacing: 3px;
+  padding: 1rem;
 }
-.card {
+.blog-center {
   margin: 1rem auto;
   background: #fff;
   width: 500px;
   padding: 1rem;
 }
-.card img {
+img {
   width: 100%;
   object-fit: cover;
 }
-.card-content {
+.blog-content {
   padding-bottom: 1rem;
 }
-.card-content h2 {
+.blog-content h2 {
   letter-spacing: 3px;
   font-size: 1.2rem;
   text-transform: capitalize;
 }
-.card-content p {
+.blog-content p {
   color: var(--grey);
   margin: 0.6rem 0;
 }
