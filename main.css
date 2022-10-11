@@ -1,0 +1,55 @@
+:root {
+  --primary: #645cff;
+  --primary-dark: #3c3799;
+  --grey-light: #f1f5f9;
+  --grey: #64748b;
+  --grey-dark: #0f172a;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: var(--grey-light);
+}
+h3 {
+  color: var(--primary);
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+.blog > h2 {
+  text-align: center;
+  letter-spacing: 3px;
+}
+.card {
+  margin: 1rem auto;
+  background: #fff;
+  width: 500px;
+  padding: 1rem;
+}
+.card img {
+  width: 100%;
+  object-fit: cover;
+}
+.card-content {
+  padding-bottom: 1rem;
+}
+.card-content h2 {
+  letter-spacing: 3px;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+}
+.card-content p {
+  color: var(--grey);
+  margin: 0.6rem 0;
+}
+.card-btn {
+  text-transform: capitalize;
+  font-weight: 600;
+}
