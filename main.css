@@ -1,53 +1,86 @@
+/* css reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* css variables */
 :root {
   --primary: #645cff;
   --primary-dark: #3c3799;
   --grey-light: #f1f5f9;
   --grey: #64748b;
   --grey-dark: #0f172a;
+  --max-width: 1170px;
+  --fluid-width: 90vw;
+  --black: #222;
+  --white: #fff;
+  --letter-spacing: 2px;
+  --border-radius: 0.15rem;
+  --shadow-light: 0 5px 15px rgba (0, 0, 0, 0.1);
+  --shadow-dark: 0 5px 15px rgba (0, 0, 0, 0.2);
+  --transition: 0.3s ease-in-out all;
 }
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
+/* main stylling */
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background: var(--grey-light);
+  line-height: 1.5;
+  color: var(--grey-dark);
 }
-span {
+
+/* section blogs */
+.blogs {
+  padding: 5rem 0;
+}
+/* section title */
+.section-title {
+  text-align: center;
+  letter-spacing: var(--letter-spacing);
+  padding: 1rem;
+  text-transform: capitalize;
+}
+.blog-center {
+  margin: 1rem auto;
+  /* background: #fff; */
+  width: var(--fluid-width);
+  max-width: var(--max-width);
+  /* padding: 1rem; */
+}
+.img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+.blog-img {
+  border-radius: var(--border-radius);
+  margin-bottom: 1rem;
+}
+.blog {
+  background: var(--white);
+  padding: 0.75rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-light);
+  transition: var(--transition);
+  margin-bottom: 2rem;
+}
+.blog:hover {
+  box-shadow: var(--shadow-dark);
+}
+/* blog content */
+.blog-content {
+  padding-bottom: 1rem;
+}
+.blog-content span {
   color: var(--primary);
-  letter-spacing: 3px;
+  letter-spacing: var(--letter-spacing);
   text-transform: uppercase;
   font-weight: 500;
   font-size: 1rem;
   margin: 0.5rem 0;
 }
-/* section blogs */
-.blogs {
-  padding: 6rem 0;
-}
-/* section title */
-.section-title {
-  text-align: center;
-  letter-spacing: 3px;
-  padding: 1rem;
-}
-.blog-center {
-  margin: 1rem auto;
-  background: #fff;
-  width: 500px;
-  padding: 1rem;
-}
-img {
-  width: 100%;
-  object-fit: cover;
-}
-.blog-content {
-  padding-bottom: 1rem;
-}
 .blog-content h2 {
-  letter-spacing: 3px;
+  letter-spacing: var(--letter-spacing);
   font-size: 1.2rem;
   text-transform: capitalize;
 }
@@ -59,5 +92,5 @@ img {
   text-transform: capitalize;
   color: var(--primary-dark);
   font-weight: 600;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
 }
