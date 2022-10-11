@@ -51,5 +51,7 @@ h3 {
 }
 .card-btn {
   text-transform: capitalize;
+  color: var(--primary-dark);
   font-weight: 600;
+  letter-spacing: 2px;
 }
